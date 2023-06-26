@@ -13,6 +13,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+
 :root {
   --clr-white-gray: #ecf0f3;
 }
@@ -66,6 +67,7 @@ li {
   color: white;
   border: 2px solid #1c2042;
 }
+
 .input-container {
   width: 22rem;
   display: flex;
@@ -77,6 +79,7 @@ li {
   height: 8rem;
   border-radius: 1rem;
 }
+
 .input-container input {
   width: 18rem;
   height: max-content;
@@ -85,13 +88,16 @@ li {
   border-radius: 5px;
   padding: 0.5rem;
 }
+
 .input-container button {
   background-color: var(--clr-white-gray);
   box-shadow: inset -5px -5px 12px #ffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
   width: 2rem;
   height: 2rem;
   border-radius: 5px;
+  cursor: pointer;
 }
+
 .key-board-container {
   width: 22rem;
   display: flex;
@@ -103,6 +109,7 @@ li {
   padding: 1rem;
   border-radius: 1rem;
 }
+
 .key-board-container input,
 button {
   background-color: var(--clr-white-gray);
@@ -113,25 +120,27 @@ button {
   margin: 2px;
   padding: 2;
   font-size: 12px;
+  cursor: pointer;
   border-radius: 3px;
 }
+
 #space {
   width: 4rem;
 }
+
 .close {
   display: none;
 }
+
 .open {
   display: flex;
 }
 
-@media screen and (min-width: 576px) {
-}
+@media screen and (min-width: 576px) {}
 
 /* Medium devices (tablets) */
 
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 /* Large devices (desktops) */
 
@@ -139,6 +148,7 @@ button {
   .key-board-container {
     width: 40rem;
   }
+
   .key-board-container input,
   button {
     width: 2.5rem;
@@ -153,5 +163,4 @@ button {
 
 /* Extra large devices (large desktops) */
 
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
