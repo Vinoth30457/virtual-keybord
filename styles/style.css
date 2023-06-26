@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+:root {
+  --clr-white-gray: #ecf0f3;
+}
+
+body {
+  background-color: var(--clr-white-gray);
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+.input-container {
+  width: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--clr-white-gray);
+  box-shadow: inset -5px -5px 12px #ffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  height: 8rem;
+  border-radius: 1rem;
+}
+.input-container input {
+  width: 18rem;
+  height: max-content;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.input-container button {
+  background-color: var(--clr-white-gray);
+  box-shadow: inset -5px -5px 12px #ffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+}
+.key-board-container {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-white-gray);
+  box-shadow: inset -5px -5px 12px #ffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.key-board-container input,
+button {
+  background-color: var(--clr-white-gray);
+  box-shadow: inset -5px -5px 12px #ffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  margin: 2px;
+  padding: 2;
+  font-size: 12px;
+  border-radius: 3px;
+}
+#space {
+  width: 4rem;
+}
+.close {
+  display: none;
+}
+.open {
+  display: flex;
+}
+
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+  .key-board-container {
+    width: 40rem;
+  }
+  .key-board-container input,
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 2px;
+    padding: 2;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 3px;
+  }
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
+}

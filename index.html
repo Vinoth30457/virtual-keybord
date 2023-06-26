@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>virtual keyboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <h1 class="title">Virtual keyboard</h1>
+  <div class="input-container">
+    <input type="text" class="output" id="output">
+    <button class="btn-key" id="btn-key"><i class="fa-solid fa-keyboard"></i></button>
+  </div>
+  <div class="key-board-container close" id="key-board-container">
+    <div class="row-1">
+      <input type="button" value="1" class="input" onclick="display('1')">
+      <input type="button" value="2" class="input" onclick="display('2')">
+      <input type="button" value="3" class="input" onclick="display('3')">
+      <input type="button" value="4" class="input" onclick="display('4')">
+      <input type="button" value="5" class="input" onclick="display('5')">
+      <input type="button" value="6" class="input" onclick="display('6')">
+      <input type="button" value="7" class="input" onclick="display('7')">
+      <input type="button" value="8" class="input" onclick="display('8')">
+      <input type="button" value="9" class="input" onclick="display('9')">
+      <input type="button" value="0" class="input" onclick="display('0')">
+      <button id="delete" onclick="del()"><i class="fa-solid fa-delete-left"></i></button>
+    </div>
+    <div class="row-1">
+      <input type="button" value="q" class="input" onclick="display('q')">
+      <input type="button" value="w" class="input" onclick="display('w')">
+      <input type="button" value="e" class="input" onclick="display('e')">
+      <input type="button" value="r" class="input" onclick="display('r')">
+      <input type="button" value="t" class="input" onclick="display('t')">
+      <input type="button" value="y" class="input" onclick="display('y')">
+      <input type="button" value="u" class="input" onclick="display('u')">
+      <input type="button" value="i" class="input" onclick="display('i')">
+      <input type="button" value="o" class="input" onclick="display('o')">
+      <input type="button" value="p" class="input" onclick="display('p')">
+    </div>
+    <div class="row-3">
+      <button id="cap" onclick="activeFn()"><i class="fa-regular fa-square-caret-up"></i></button>
+      <input type="button" value="a" class="input" onclick="display('a')">
+      <input type="button" value="s" class="input" onclick="display('s')">
+      <input type="button" value="d" class="input" onclick="display('d')">
+      <input type="button" value="f" class="input" onclick="display('f')">
+      <input type="button" value="g" class="input" onclick="display('g')">
+      <input type="button" value="h" class="input" onclick="display('h')">
+      <input type="button" value="j" class="input" onclick="display('j')">
+      <input type="button" value="k" class="input" onclick="display('k')">
+      <input type="button" value="l" class="input" onclick="display('l')">
+      <input type="button" value=":" class="input" onclick="display(':')">
+    </div>
+    <div class="row-4">
+      <button id="done" onclick="done()"><i class="fa-solid fa-check"></i></button>
+      <input type="button" value="z" class="input" onclick="display('z')">
+      <input type="button" value="x" class="input" onclick="display('x')">
+      <input type="button" value="c" class="input" onclick="display('c')">
+      <input type="button" value="v" class="input" onclick="display('v')">
+      <input type="button" value="b" class="input" onclick="display('b')">
+      <input type="button" value="n" class="input" onclick="display('n')">
+      <input type="button" value="n" class="input" onclick="display('n')">
+      <input type="button" value="m" class="input" onclick="display('m')">
+      <input type="button" value="," class="input" onclick="display(',')">
+      <input type="button" value="." class="input" onclick="display('.')">
+      <input type="button" value="?" class="input" onclick="display('?')">
+
+    </div>
+    <div class="row-4">
+
+      <input type="button" value="!" class="input" onclick="display('!')">
+      <input type="button" value="#" class="input" onclick="display('#')">
+      <input type="button" value="$" class="input" onclick="display('$')">
+      <input type="button" value="%" class="input" onclick="display('%')">
+      <input type="button" value="space" class="input" id="space" onclick="display(' ')">
+      <input type="button" value="@" class="input" onclick="display('@')">
+      <input type="button" value="/" class="input" onclick="display('/')">
+      <input type="button" value="*" class="input" onclick="display('*')">
+      <input type="button" value="-" class="input" onclick="display('-')">
+      <input type="button" value="+" class="input" onclick="display('+')">
+
+    </div>
+  </div>
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
